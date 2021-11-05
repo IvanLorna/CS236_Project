@@ -1,14 +1,14 @@
 COPY stores(storeid, name, state, latitude, longitude)
-FROM '../data/stores.csv'
+FROM '/extra/$USER/stores.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY sales(storeid, itemid, price, time)
-FROM '../data/sales.csv'
+FROM '/extra/$USER/sales.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY catalog(itemid, itemname)
-FROM '../data/catalog.csv'
+FROM '/extra/$USER/catalog.csv'
 DELIMITER ','
 CSV HEADER;
