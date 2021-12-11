@@ -9,4 +9,4 @@ cp -rf ../data/stores.csv /extra/$USER/stores.csv
 
 psql -h localhost -p $PGPORT $USER"_DB" < ../sql/schema.sql
 psql -h localhost -p $PGPORT $USER"_DB" < ../sql/insert.sql
-psql -h localhost -p $PGPORT $USER"_DB" < ../sql/index.sql
+#psql -h localhost -p $PGPORT $USER"_DB" < ../sql/index.sql
